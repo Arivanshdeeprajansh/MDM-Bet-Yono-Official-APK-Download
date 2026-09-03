@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDM Bet Yono Official APK Download | Gaming Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandRed: '#ff3b30',
+                        brandBlue: '#007aff',
+                        brandGreen: '#34c759',
+                        lightBg: '#f0fdf4'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Apple-style smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Animated Dynamic Background with Green, Red, and Blue hints (Light Theme) */
+        @keyframes dynamicBg {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        body {
+            background: linear-gradient(135deg, #f0fdf4, #e0f2fe, #fee2e2);
+            background-size: 300% 300%;
+            animation: dynamicBg 15s ease infinite;
+            color: #1f2937;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* Glassmorphism Effect */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.05);
+        }
+
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(229, 231, 235, 0.5);
+        }
+
+        /* Apple style fade-in up motion */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade-in {
+            animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        /* Advanced Card Gaming Motions & Parallax Card Dealing Effects */
+        @keyframes dealAndFloat1 {
+            0% { transform: translateY(60px) rotate(-30deg) scale(0.8); opacity: 0; }
+            50% { opacity: 1; }
+            100% { transform: translateY(0px) rotate(-8deg) scale(1); }
+        }
+
+        @keyframes dealAndFloat2 {
+            0% { transform: translateY(60px) rotate(30deg) scale(0.8); opacity: 0; }
+            50% { opacity: 1; }
+            100% { transform: translateY(0px) rotate(10deg) scale(1); }
+        }
+
+        @keyframes dealAndFloat3 {
+            0% { transform: translateY(60px) rotate(0deg) scale(0.8); opacity: 0; }
+            50% { opacity: 1; }
+            100% { transform: translateY(0px) rotate(-2deg) scale(1); }
+        }
+
+        @keyframes continuousDrift {
+            0%, 100% { transform: translateY(0px) rotate(var(--base-rot)) scale(1); }
+            50% { transform: translateY(-16px) calc(var(--base-rot) + 3deg) scale(1.04); }
+        }
+
+        @keyframes pulseGlow {
+            0%, 100% { opacity: 0.25; transform: scale(1); }
+            50% { opacity: 0.55; transform: scale(1.12); }
+        }
+
+        /* Staggered deal-in animations */
+        .card-enter-1 {
+            --base-rot: -8deg;
+            animation: dealAndFloat1 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards, continuousDrift 6s ease-in-out infinite 1.2s;
+        }
+
+        .card-enter-2 {
+            --base-rot: 10deg;
+            animation: dealAndFloat2 1.4s cubic-bezier(0.16, 1, 0.3, 1) forwards, continuousDrift 7s ease-in-out infinite 1.4s;
+        }
+
+        .card-enter-3 {
+            --base-rot: -2deg;
+            animation: dealAndFloat3 1.6s cubic-bezier(0.16, 1, 0.3, 1) forwards, continuousDrift 5.5s ease-in-out infinite 1.6s;
+        }
+
+        .glow-bg {
+            animation: pulseGlow 4s ease-in-out infinite;
+        }
+
+        /* Page switching logic via CSS targets */
+        .page-section {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .page-section.active {
+            display: block;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col selection:bg-brandBlue selection:text-white">
+
+    <header class="fixed top-0 left-0 right-0 z-50 glass-nav transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3 cursor-pointer" onclick="switchPage('home')">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brandRed to-brandBlue flex items-center justify-center text-white font-bold text-xl shadow-lg">
+                    <i class="fa-solid fa-diamond"></i>
+                </div>
+                <span class="text-xl font-black tracking-tight text-gray-900">MDM Bet Yono</span>
+            </div>
+            
+            <nav class="hidden md:flex items-center space-x-8 font-medium text-sm text-gray-600">
+                <button onclick="switchPage('home')" class="nav-btn hover:text-brandBlue transition" data-target="home">Home</button>
+                <button onclick="switchPage('service')" class="nav-btn hover:text-brandBlue transition" data-target="service">Services</button>
+                <button onclick="switchPage('blog')" class="nav-btn hover:text-brandBlue transition" data-target="blog">Blog</button>
+                <button onclick="switchPage('about')" class="nav-btn hover:text-brandBlue transition" data-target="about">About Us</button>
+                <button onclick="switchPage('contact')" class="nav-btn hover:text-brandBlue transition" data-target="contact">Contact</button>
+            </nav>
+
+            <div>
+                <button onclick="switchPage('blog')" class="hidden sm:inline-flex px-5 py-2.5 rounded-full bg-brandBlue text-white font-semibold text-sm shadow-lg shadow-blue-500/20 hover:bg-blue-600 transition transform hover:-translate-y-0.5">
+                    Download APK
+                </button>
+                <button onclick="toggleMobileMenu()" class="md:hidden text-2xl text-gray-800 focus:outline-none">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden glass-card border-t px-6 py-4 flex flex-col space-y-3">
+            <button onclick="switchPage('home'); toggleMobileMenu();" class="text-left font-medium py-1">Home</button>
+            <button onclick="switchPage('service'); toggleMobileMenu();" class="text-left font-medium py-1">Services</button>
+            <button onclick="switchPage('blog'); toggleMobileMenu();" class="text-left font-medium py-1">Blog</button>
+            <button onclick="switchPage('about'); toggleMobileMenu();" class="text-left font-medium py-1">About Us</button>
+            <button onclick="switchPage('contact'); toggleMobileMenu();" class="text-left font-medium py-1">Contact</button>
+        </div>
+    </header>
+
+    <main class="flex-grow pt-28 pb-16">
+
+        <section id="home" class="page-section active max-w-7xl mx-auto px-6 py-12 animate-fade-in">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-red-100 text-brandRed border border-red-200">
+                        <i class="fa-solid fa-spade"></i> Elite Card & Table Gaming
+                    </span>
+                    <h1 class="text-5xl lg:text-6xl font-black text-gray-900 tracking-tight leading-tight">
+                        Experience Ultimate Thrills with <span class="bg-gradient-to-r from-brandRed to-brandBlue bg-clip-text text-transparent">MDM Bet Yono</span>
+                    </h1>
+                    <p class="text-lg text-gray-600 leading-relaxed">
+                        Step into a revolutionary world of high-performance card entertainment, secure live tables, and immersive gameplay tailored for true gaming enthusiasts worldwide.
+                    </p>
+                    <div class="flex flex-wrap gap-4 pt-4">
+                        <a href="https://officialallyonogames.com/mdm-bet-yono-official-apk-download/" target="_blank" class="px-8 py-4 rounded-2xl bg-brandRed text-white font-bold text-base shadow-xl shadow-red-500/20 hover:bg-red-600 transition transform hover:-translate-y-1 inline-flex items-center gap-3">
+                            <i class="fa-solid fa-download"></i> Download Official APK
+                        </a>
+                        <button onclick="switchPage('service')" class="px-8 py-4 rounded-2xl glass-card font-bold text-base text-gray-800 hover:bg-white/80 transition transform hover:-translate-y-1">
+                            Explore Services
+                        </button>
+                    </div>
+                </div>
+
+                <div class="relative h-96 flex items-center justify-center">
+                    <div class="absolute w-80 h-80 rounded-full bg-gradient-to-r from-brandRed via-brandBlue to-brandGreen opacity-30 blur-3xl glow-bg"></div>
+                    
+                    <div class="absolute card-enter-1 w-36 h-52 glass-card rounded-2xl p-4 flex flex-col justify-between shadow-2xl border border-white/80 transform -translate-x-16 -translate-y-4 hover:scale-105 transition-transform cursor-pointer">
+                        <div class="text-brandRed font-black text-xl flex justify-between items-center">
+                            <span>A</span>
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="text-center text-4xl text-brandRed">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="text-brandRed font-black text-xl flex justify-between items-center rotate-180">
+                            <span>A</span>
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                    </div>
+
+                    <div class="absolute card-enter-2 w-36 h-52 glass-card rounded-2xl p-4 flex flex-col justify-between shadow-2xl border border-white/80 transform translate-x-12 translate-y-6 hover:scale-105 transition-transform cursor-pointer">
+                        <div class="text-gray-900 font-black text-xl flex justify-between items-center">
+                            <span>K</span>
+                            <i class="fa-solid fa-club"></i>
+                        </div>
+                        <div class="text-center text-4xl text-gray-900">
+                            <i class="fa-solid fa-crown"></i>
+                        </div>
+                        <div class="text-gray-900 font-black text-xl flex justify-between items-center rotate-180">
+                            <span>K</span>
+                            <i class="fa-solid fa-club"></i>
+                        </div>
+                    </div>
+
+                    <div class="absolute card-enter-3 w-36 h-52 glass-card rounded-2xl p-4 flex flex-col justify-between shadow-2xl border border-white/80 transform -translate-x-2 translate-y-20 hover:scale-105 transition-transform cursor-pointer">
+                        <div class="text-brandBlue font-black text-xl flex justify-between items-center">
+                            <span>Q</span>
+                            <i class="fa-solid fa-diamond"></i>
+                        </div>
+                        <div class="text-center text-4xl text-brandBlue">
+                            <i class="fa-solid fa-diamond"></i>
+                        </div>
+                        <div class="text-brandBlue font-black text-xl flex justify-between items-center rotate-180">
+                            <span>Q</span>
+                            <i class="fa-solid fa-diamond"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="service" class="page-section max-w-7xl mx-auto px-6 py-12 animate-fade-in">
+            <div class="text-center max-w-2xl mx-auto space-y-4 mb-16">
+                <span class="text-brandBlue font-semibold text-sm uppercase tracking-wider">Our Capabilities</span>
+                <h2 class="text-4xl font-black text-gray-900">Tailored Card Gaming Services</h2>
+                <p class="text-gray-600">Discover what makes our platform the leading choice for digital table entertainment and seamless card utilities.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="glass-card p-8 rounded-3xl space-y-4 hover:shadow-xl transition transform hover:-translate-y-2">
+                    <div class="w-14 h-14 rounded-2xl bg-red-100 text-brandRed flex items-center justify-center text-2xl font-bold">
+                        <i class="fa-solid fa-shuffle"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900">Instant Deal & Shuffle</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Enjoy ultra-low latency card shuffling algorithms and instantaneous hand dealing powered by cutting-edge mobile architecture.
+                    </p>
+                </div>
+                <div class="glass-card p-8 rounded-3xl space-y-4 hover:shadow-xl transition transform hover:-translate-y-2">
+                    <div class="w-14 h-14 rounded-2xl bg-blue-100 text-brandBlue flex items-center justify-center text-2xl font-bold">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900">Secure Table Encryption</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Multi-layered table security protocols protect your session data and maintain absolute fairness across all matches.
+                    </p>
+                </div>
+                <div class="glass-card p-8 rounded-3xl space-y-4 hover:shadow-xl transition transform hover:-translate-y-2">
+                    <div class="w-14 h-14 rounded-2xl bg-green-100 text-brandGreen flex items-center justify-center text-2xl font-bold">
+                        <i class="fa-solid fa-trophy"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900">Competitive Tournaments</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Participate in daily multiplayer card tournaments with global leaderboards and instant reward settlements.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog" class="page-section max-w-4xl mx-auto px-6 py-12 animate-fade-in">
+            <div class="glass-card p-8 md:p-12 rounded-3xl space-y-8">
+                
+                <div class="border-b border-gray-200 pb-6 space-y-4">
+                    <span class="px-3 py-1 bg-blue-100 text-brandBlue text-xs font-bold rounded-full uppercase tracking-wide">Official Guide</span>
+                    <h1 class="text-3xl md:text-5xl font-black text-gray-900 tracking-tight">
+                        The Ultimate Comprehensive Guide to MDM Bet Yono Official APK Download
+                    </h1>
+                    <div class="flex items-center gap-4 text-sm text-gray-500">
+                        <span><i class="fa-regular fa-calendar"></i> September 2026</span>
+                        <span>•</span>
+                        <span><i class="fa-regular fa-clock"></i> 8 Min Read</span>
+                        <span>•</span>
+                        <span><i class="fa-solid fa-user-pen"></i> Gaming Editor</span>
+                    </div>
+                </div>
+
+                <div class="prose max-w-none text-gray-700 space-y-6 leading-relaxed text-base">
+                    
+                    <p>
+                        In the modern digital card gaming ecosystem, finding an application that balances robust table performance, intuitive deck controls, and absolute security can be a challenge. Mobile card gaming enthusiasts continuously search for streamlined solutions that bring table excitement right to their fingertips without compromising device safety. Enter the <a href="https://officialallyonogames.com/mdm-bet-yono-official-apk-download/" class="text-brandBlue underline hover:text-blue-700 font-semibold">MDM Bet Yono Official APK Download</a>, a premier option taking the mobile gaming community by storm. This comprehensive guide will walk you through everything you need to know about setting up, utilizing, and maximizing your experience with this exceptional card platform.
+                    </p>
+
+                    <h2 class="text-2xl font-bold text-gray-900 pt-4">Introduction to Next-Gen Mobile Card Platforms</h2>
+                    <p>
+                        The evolution of card applications has changed how users interact with digital table entertainment. Traditional portals often suffer from lag, intrusive ads, and complicated interfaces. However, modern platforms focus heavily on user-centric design principles. By streamlining access through dedicated packages, users can bypass traditional app store friction. When you secure the <a href="https://officialallyonogames.com/mdm-bet-yono-official-apk-download/" class="text-brandBlue underline hover:text-blue-700 font-semibold">MDM Bet Yono Official APK Download</a>, you are investing in a refined card architecture built specifically for high-speed connectivity and stable operation.
+                    </p>
+                    <p>
+                        Digital applications today require strict attention to compatibility across diverse hardware specifications. Whether you are using a flagship smartphone or an older Android device, performance optimization remains paramount. Developers of this application have integrated adaptive rendering engines that adjust graphical table loads dynamically, ensuring smooth card animations and zero frame drops during peak usage periods.
+                    </p>
+
+                    <h2 class="text-2xl font-bold text-gray-900 pt-4">Key Features of the Card Platform</h2>
+                    <p>
+                        What sets this application apart from competitors in the crowded digital marketplace? The answer lies in its meticulous card-focused feature set. Every single element of the virtual table interface has been crafted with precision, keeping user convenience at the forefront.
+                    </p>
+                    <ul class="list-disc pl-6 space-y-2">
+                        <li><strong>Lightning-Fast Table Layouts:</strong> Cards, chips, and interactive modules load in milliseconds, reducing wait times drastically.</li>
+                        <li><strong>Advanced Security Infrastructure:</strong> State-of-the-art encryption safeguards personal preferences and account details.</li>
+                        <li><strong>Low Battery and Data Consumption:</strong> Optimized background processes ensure your phone remains cool and efficient during long sessions.</li>
+                        <li><strong>Regular Automated Updates:</strong> Seamless patching systems keep your software current with the latest card variations and security fixes.</li>
+                    </ul>
+                    <p>
+                        Furthermore, utilizing the <a href="https://officialallyonogames.com/mdm-bet-yono-official-apk-download/" class="text-brandBlue underline hover:text-blue-700 font-semibold">MDM Bet Yono Official APK Download</a> grants you direct access to community-driven updates, allowing developers to implement user feedback rapidly.
+                    </p>
+
+                    <h2 class="text-2xl font-bold text-gray-900 pt-4">Step-by-Step Installation Guide</h2>
+                    <p>
+                        Installing an application via an official package file is a straightforward process when following correct security protocols. If you are new to side-loading applications on Android devices, simply follow these structured steps:
+                    </p>
+                    <ol class="list-decimal pl-6 space-y-2">
+                        <li>Navigate to your device's <strong>Settings</strong> menu and select the <strong>Security</strong> or <strong>Privacy</strong> tab.</li>
+                        <li>Enable the option that allows installation from <strong>Unknown Sources</strong> (this is a standard prompt for any external package installation).</li>
+                        <li>Access the official source to initiate your <a href="https://officialallyonogames.com/mdm-bet-yono-official-apk-download/" class="text-brandBlue underline hover:text-blue-700 font-semibold">MDM Bet Yono Official APK Download</a>.</li>
+                        <li>Locate the downloaded file in your device's File Manager or Downloads folder.</li>
+                        <li>Tap on the file and follow the onscreen prompts to complete the installation process within seconds.</li>
+                    </ol>
+                    <p>
+                        Once installed, the application icon will appear on your home screen or app drawer, ready for immediate table action.
+                    </p>
+
+                    <h2 class="text-2xl font-bold text-gray-900 pt-4">User Testimonial: A Real Experience from Long Island</h2>
+                    <p>
+                        To truly understand the value of any platform, hearing from active community members provides irreplaceable insight. Here is what one of our dedicated users from Long Island has to say about their journey:
+                    </p>
+                    <blockquote class="border-l-4 border-brandBlue pl-4 italic text-gray-600 my-4">
+                        "I’ve spent years trying out various mobile card gaming apps, and most of them either lag terribly or drain my battery within twenty minutes. Finding the <a href="https://officialallyonogames.com/mdm-bet-yono-official-apk-download/" class="text-brandBlue underline hover:text-blue-700 font-semibold">MDM Bet Yono Official APK Download</a> completely changed my perspective. Living in a bustling area like Long Island, I need something reliable on the go. The card animations are fluid, table layout design is clean, and stability is unmatched. Highly recommended to anyone looking for premium mobile card entertainment!" 
+                        <br><span class="font-bold text-gray-800 not-italic">— Michael R., Long Island, NY</span>
+                    </blockquote>
+
+                    <h2 class="text-2xl font-bold text-gray-900 pt-4">Security, Privacy, and Safe Usage Practices</h2>
+                    <p>
+                        In today's interconnected digital environment, user data safety is non-negotiable. Malicious downloads from unverified mirror sites pose significant risks to device integrity and personal information. This is why obtaining files exclusively through verified channels is critical. The official repository ensures that every build undergoes rigorous malware screening before public release.
+                    </p>
+                    <p>
+                        Users should always verify URL structures before executing any download commands. By sticking to authorized links such as the official portal, you eliminate the risk of counterfeit software installations. Maintaining good digital hygiene, such as using strong passwords and keeping your operating system updated, further enhances your safety profile while enjoying your favorite mobile pastimes.
+                    </p>
+
+                    <h2 class="text-2xl font-bold text-gray-900 pt-4">Optimizing Your Device for Peak Performance</h2>
+                    <p>
+                        While the application itself is heavily optimized, taking a few proactive steps on your Android device can further elevate your overall experience. Clearing cached files periodically, ensuring sufficient storage availability, and closing background-heavy applications allow your processor to allocate maximum resources to active table tasks. These small adjustments translate directly into smoother animation frames and quicker response times.
+                    </p>
+
+                    <h2 class="text-2xl font-bold text-gray-900 pt-4">Conclusion</h2>
+                    <p>
+                        The digital card entertainment landscape continues to expand rapidly, offering users unprecedented levels of engagement and accessibility. Choosing the right platform determines whether your experience is frustrating or exhilarating. Through consistent performance, robust security measures, and an intuitive card interface, the application reviewed today stands out as a top-tier choice. Ensure you always use verified channels for your <a href="https://officialallyonogames.com/mdm-bet-yono-official-apk-download/" class="text-brandBlue underline hover:text-blue-700 font-semibold">MDM Bet Yono Official APK Download</a> to safeguard your device while unlocking limitless entertainment possibilities.
+                    </p>
+
+                    <h2 class="text-2xl font-bold text-gray-900 pt-6">Frequently Asked Questions (F&Q)</h2>
+                    
+                    <div class="space-y-4 pt-2">
+                        <div class="bg-white/60 p-4 rounded-xl border border-gray-200">
+                            <h3 class="font-bold text-gray-900">1. Is the MDM Bet Yono Official APK Download completely free?</h3>
+                            <p class="text-sm text-gray-600 mt-1">Yes, obtaining the official package file from authorized links is completely free of charge.</p>
+                        </div>
+                        <div class="bg-white/60 p-4 rounded-xl border border-gray-200">
+                            <h3 class="font-bold text-gray-900">2. Will this app work on all Android versions?</h3>
+                            <p class="text-sm text-gray-600 mt-1">The application is engineered to support Android 8.0 and newer operating system versions with optimal performance.</p>
+                        </div>
+                        <div class="bg-white/60 p-4 rounded-xl border border-gray-200">
+                            <h3 class="font-bold text-gray-900">3. How do I update the application when a new version releases?</h3>
+                            <p class="text-sm text-gray-600 mt-1">You can revisit the official download portal to pull the latest version whenever updates are rolled out by developers.</p>
+                        </div>
+                        <div class="bg-white/60 p-4 rounded-xl border border-gray-200">
+                            <h3 class="font-bold text-gray-900">4. Is my personal information secure while using this platform?</h3>
+                            <p class="text-sm text-gray-600 mt-1">Absolutely. Advanced encryption standards are implemented to protect all user data and transaction logs securely.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section id="about" class="page-section max-w-4xl mx-auto px-6 py-12 animate-fade-in">
+            <div class="glass-card p-8 md:p-12 rounded-3xl space-y-6 text-center">
+                <span class="px-3 py-1 bg-green-100 text-brandGreen text-xs font-bold rounded-full uppercase tracking-wide">About Our Mission</span>
+                <h2 class="text-4xl font-black text-gray-900">Redefining Digital Card Gaming Excellence</h2>
+                <p class="text-gray-600 leading-relaxed text-base max-w-2xl mx-auto">
+                    We are a dedicated collective of software developers, card gaming enthusiasts, and UX experts committed to bridging the gap between high table performance and user accessibility. Our vision is to deliver secure, lightning-fast, and immersive solutions that cater to modern mobile users globally.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-6">
+                    <div class="p-6 rounded-2xl bg-white/50 border border-gray-200">
+                        <i class="fa-solid fa-bullseye text-3xl text-brandRed mb-3"></i>
+                        <h3 class="font-bold text-gray-900 text-lg">Our Vision</h3>
+                        <p class="text-xs text-gray-600 mt-1">To become the world's most trusted portal for verified application releases.</p>
+                    </div>
+                    <div class="p-6 rounded-2xl bg-white/50 border border-gray-200">
+                        <i class="fa-solid fa-shield-cat text-3xl text-brandBlue mb-3"></i>
+                        <h3 class="font-bold text-gray-900 text-lg">Core Values</h3>
+                        <p class="text-xs text-gray-600 mt-1">Transparency, absolute device safety, and frictionless user experiences.</p>
+                    </div>
+                    <div class="p-6 rounded-2xl bg-white/50 border border-gray-200">
+                        <i class="fa-solid fa-users text-3xl text-brandGreen mb-3"></i>
+                        <h3 class="font-bold text-gray-900 text-lg">Community First</h3>
+                        <p class="text-xs text-gray-600 mt-1">Listening closely to user feedback to drive meaningful platform updates.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="page-section max-w-2xl mx-auto px-6 py-12 animate-fade-in">
+            <div class="glass-card p-8 md:p-12 rounded-3xl space-y-6">
+                <div class="text-center space-y-2">
+                    <span class="px-3 py-1 bg-red-100 text-brandRed text-xs font-bold rounded-full uppercase tracking-wide">Secure Inquiry</span>
+                    <h2 class="text-3xl font-black text-gray-900">Get in Touch With Us</h2>
+                    <p class="text-gray-600 text-sm">Have questions or feedback? Fill out the form below. Your privacy is fully protected.</p>
+                </div>
+
+                <form id="contactForm" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-1">Your Name</label>
+                        <input type="text" id="cName" required class="w-full px-4 py-3 rounded-xl bg-white/80 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brandBlue text-sm transition" placeholder="Enter your full name">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-1">Email Address</label>
+                        <input type="email" id="cEmail" required class="w-full px-4 py-3 rounded-xl bg-white/80 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brandBlue text-sm transition" placeholder="name@example.com">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-1">Phone Number</label>
+                        <input type="tel" id="cPhone" required class="w-full px-4 py-3 rounded-xl bg-white/80 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brandBlue text-sm transition" placeholder="Enter your phone number">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-1">Your Message</label>
+                        <textarea id="cMessage" rows="4" required class="w-full px-4 py-3 rounded-xl bg-white/80 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brandBlue text-sm transition" placeholder="Write your message here..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full py-4 rounded-xl bg-brandBlue text-white font-bold text-sm shadow-lg shadow-blue-500/20 hover:bg-blue-600 transition transform hover:-translate-y-0.5">
+                        Send Message Securely
+                    </button>
+                    <div id="formSuccess" class="hidden text-center text-sm font-semibold text-brandGreen py-2">
+                        <i class="fa-solid fa-circle-check"></i> Thank you! Your message has been sent successfully.
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="glass-nav border-t mt-auto py-8">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between text-xs text-gray-500 space-y-4 md:space-y-0">
+            <div class="flex items-center space-x-2">
+                <span class="font-bold text-gray-800">MDM Bet Yono Official Portal</span>
+                <span>© 2026 All Rights Reserved.</span>
+            </div>
+            <div class="flex space-x-6">
+                <button onclick="switchPage('home')" class="hover:text-brandBlue transition">Home</button>
+                <button onclick="switchPage('service')" class="hover:text-brandBlue transition">Services</button>
+                <button onclick="switchPage('blog')" class="hover:text-brandBlue transition">Blog</button>
+                <button onclick="switchPage('about')" class="hover:text-brandBlue transition">About</button>
+                <button onclick="switchPage('contact')" class="hover:text-brandBlue transition">Contact</button>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function switchPage(pageId) {
+            // Hide all sections
+            const sections = document.querySelectorAll('.page-section');
+            sections.forEach(sec => {
+                sec.classList.remove('active');
+            });
+
+            // Show target section
+            const target = document.getElementById(pageId);
+            if (target) {
+                target.classList.add('active');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        }
+
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            // Simulate form submission success without revealing owner details
+            const successDiv = document.getElementById('formSuccess');
+            successDiv.classList.remove('hidden');
+            document.getElementById('contactForm').reset();
+            setTimeout(() => {
+                successDiv.classList.add('hidden');
+            }, 5000);
+        }
+    </script>
+</body>
+</html>
